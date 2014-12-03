@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @lemur.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @lemur.email %>
+</p>
+
+<%= link_to 'Edit', edit_lemur_path(@lemur) %> |
+<%= link_to 'Back', lemurs_path %>
