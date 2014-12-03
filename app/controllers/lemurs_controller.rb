@@ -29,7 +29,7 @@ class LemursController < ApplicationController
     respond_to do |format|
       if @lemur.save
 
-        LemurMailer.welcome_lemur(@lemur).deliver
+        LemurMailer.delay.welcome_lemur(@lemur)
 
         format.html { redirect_to @lemur, notice: 'Lemur was successfully created.' }
         format.json { render :show, status: :created, location: @lemur }
