@@ -100,6 +100,7 @@ class LemurMailer < ActionMailer::Base
 
   #####2) Configure
   ```ruby
+  #environments/development.rb
   config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.delivery_method = :smtp
