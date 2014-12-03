@@ -23,8 +23,7 @@ class LemursController < ApplicationController
 
   # POST /lemurs
   # POST /lemurs.json
-  def create
-    @lemur = Lemur.new(lemur_params)
+  def create    @lemur = Lemur.new(lemur_params)
 
     respond_to do |format|
       if @lemur.save
